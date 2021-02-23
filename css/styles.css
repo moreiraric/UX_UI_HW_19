@@ -1,0 +1,102 @@
+header{
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    border: 1px solid black;
+    font-family: 'Roboto';
+    background-color: honeydew;
+    padding: 15px;
+}
+
+header img{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+header ul{
+    float: right;
+}
+
+header li{
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+footer{
+    background-color: grey;
+    padding: 5px;
+    font-family: 'Roboto';
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 5px;
+    color: white;
+}
+
+footer li{
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+body{
+    background-color: rgb(201, 201, 201);
+    background: gray url(crossline-dots.png) repeat 0 0;
+    font-family: "Roboto";
+    margin: 5px;
+    text-align: center;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+.flexContainer{
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.flexContainer div{
+    border: 1px solid black;
+    background-color: white;
+    padding: 5%;
+    text-align: center;
+    max-width: 300px;
+}
+
+.flexContainer img{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 10px;
+    padding: 50px;
+}
+
+.grid-item{
+    border: 1px solid black;
+    background-color: white;
+    padding: 1%;
+    text-align: left;
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .flexContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexContainer div{
+        width: 100%;
+    }
+  }
+
+  @-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
